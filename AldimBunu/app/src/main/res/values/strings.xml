@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Aldım Bunu</string>
+
+    <string name="first_slide">Çok Çeşitli Ürün Kategorisi</string>
+    <string name="second_slide">Hızlı Teslimat</string>
+    <string name="third_slide">Müşteri Memnuniyeti</string>
+
+    <string name="description">ALDIM BUNU - Aldım Bunu - aldım bunu </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

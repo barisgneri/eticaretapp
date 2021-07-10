@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1000116188475",
+    "project_id": "aldimbunu-6dff8",
+    "storage_bucket": "aldimbunu-6dff8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1000116188475:android:a049ccde75a4f8eeb5b31e",
+        "android_client_info": {
+          "package_name": "com.barisproduction.aldimbunu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1000116188475-kv4asgd0uteq60lo6rbkba9mvotdilfa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKvCCXS0QZxIXzcDWMJc3_q6G-lqJ9rQc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1000116188475-kv4asgd0uteq60lo6rbkba9mvotdilfa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

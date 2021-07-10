@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.DetayActivity">
+
+
+    <ImageView
+        android:id="@+id/detay_img"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/ic_launcher_background"
+        android:scaleType="centerCrop"/>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/detay_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Ürün Detayı" />
+
+
+    <androidx.cardview.widget.CardView
+        android:translationY="-50dp"
+        android:id="@+id/cardview"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detay_img">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:fontFamily="@font/amethysta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/detay_isim"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:text="Urun_Name"
+                    android:textColor="@color/black"/>
+
+
+                <TextView
+                    android:id="@+id/puan"
+                    android:fontFamily="@font/amethysta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4.0"
+                    android:textColor="@color/black"
+                    android:layout_toStartOf="@id/my_rating"
+                    android:textSize="16sp"
+                    android:layout_marginTop="8dp"/>
+
+                <RatingBar
+                    android:id="@+id/my_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:stepSize="0.1"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:fontFamily="@font/amethysta"
+                android:id="@+id/detay_acıklama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Fiyat"
+                android:textColor="@color/black"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/amethysta"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₺"
+                    android:textStyle="bold"
+                    android:textColor="@color/purple_700"
+                    android:fontFamily="@font/amethysta"/>
+
+                <TextView
+                    android:id="@+id/detay_fiyat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="urun_fiyat"
+                    android:textStyle="bold"
+                    android:textColor="@color/purple_700"
+                    android:fontFamily="@font/amethysta"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:layout_marginRight="7dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/plusicon"
+                    android:id="@+id/adet_arttır"/>
+
+                <TextView
+                    android:id="@+id/adet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="30sp"/>
+
+                <ImageView
+                    android:layout_marginLeft="7dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/iconminus"
+                    android:id="@+id/adet_azalt"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:backgroundTint="@color/pink"
+        android:id="@+id/sepet_ekle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/mycart"
+        android:drawableTint="@color/white"
+        android:padding="14dp"
+        android:text="Sepete Ekle"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardview"
+        app:layout_constraintVertical_bias="0.635"
+        app:layout_constraintWidth_percent=".8" />
+
+    <Button
+        android:id="@+id/satın_al"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_baseline_shopping_cart_24"
+        android:drawableTint="@color/white"
+        android:padding="14dp"
+        android:text="Satın Al"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sepet_ekle"
+        app:layout_constraintVertical_bias="0.619"
+        app:layout_constraintWidth_percent=".8" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
